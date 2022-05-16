@@ -15,7 +15,7 @@
 - Again: FINISH YOUR TASK. All the details. Double check your work. If there is no accepting criteria, make one while reading the task description.
 
 ## Math
-Math is important to become a good programmer?
-How much?
-What are the topics I have to study?
-What kind of IT jobs need a good knowledge of math?
+- Math is important to become a good programmer?
+- How much?
+- What are the topics I have to study?
+- What kind of IT jobs need a good knowledge of math?
