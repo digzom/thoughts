@@ -1,0 +1,33 @@
+Pra quem é ágil de verdade, a prioridade é a entrega.
+
+Nos últimos dias tenho lido bastante sobre agilidade e antes de cada leitura/curso
+que faço, releio o manifesto ágil.
+
+Tem ficado muito claro que muitas ferramentas que foram criadas para ajudar, tem um
+contexto muito importante de ser considerado na hora de aplicar quaisquer uma dessas
+ferramentas. Scrum, Kanban, LeSS, Nexus, XP ou qualquer outra metodologia ágil SEMPRE
+vai depender dos objetos do projeto, o tempo que se tem (sim, projetos ágeis podem
+ter tempo estipulado), tipo de cliente, cultura, recursos e diversas outras variáveis
+que precisam ser pensadas. E até esses essas metologias podem (e devem) ser mudadas
+durante o percurso do projeto, caso não esteja realmente resolvendo problemas.
+
+Inclusive, outra coisa que parece estar bem desalinhada com a agilidade é o purismo
+com esses frameworks. Talvez uma parte do seu fluxo de Scrum (que você julga super
+importante) esteja mais barrando do que de fato resolvendo um problema. Tira ele
+durante algumas semanas, ou adiciona uma condição para que ele aconteça ou não.
+
+A palavra é adaptação, capacidade de reagir à mudanças o mais rápido possível. E veja
+bem: isto é bem diferente de falar em velocidade do projeto (que também é importante
+mas não é o assunto aqui).
+
+Falar em reagir à mudanças é ter um ritmo sustentável e inteligente que te
+possibilite mudar o curso do que você tem feito se for necessário. Ser sensível às
+necessidades.
+
+- Quem vai rápido demais, não vai conseguir mudar a rota ao dar de cara com um
+  desfiladeiro
+- Quem vai muito devagar, não consegue reagir às mudanças no tempo necessário para
+  ter vantagens sobre a concorrência
+
+Posso estar errado? Com certeza. Os comentários estão aqui para que eu receba
+feedbacks e consiga ajustar meu percurso nesse aprendizado.
