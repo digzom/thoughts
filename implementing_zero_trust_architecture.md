@@ -77,3 +77,28 @@ Istio and Envoy.
 ## Key ideas
 
 We talk about proxies and stuff but your authentication can be handle by a authentication provider or SSO. (how to create a secure authentication provider for my application?)
+
+The mesh can become a Security Kernel for a distributed system.
+
+Multitenancy mentioned. With Envoy as PEP we can move security concerns out of the application and into the mesh. NIST SP 800-204B.
+
+## Service Mesh enables cross-curring change
+
+- centralized control (policies)
+    - Yes, it is more complex, more hard.
+
+## Realizing Identity Based Segmentation with a Service Mesh
+
+1. Encryption in transit
+    - mTLS
+2. Service Identity & Authentication
+    - SPIFFE identities for workloads in the mesh
+3. Service-to-Service Authorization
+    - Built-in policies good starting point, mature implementations should leverage dedicated authz infra for richer policy and decisions - e.g. next generation acces control (NGAC)
+4. End User identity & Authentication
+    - Defer to trusted identity provider or IDaaS
+5. End user-to-resource authorization
+    - Integrate with existing system via OIDC or leverage dedicated authz infra - e.g. NGAC
+
+
+Multi-tier policies. Network oriented policies have to exist, yet.
