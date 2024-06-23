@@ -136,10 +136,20 @@ Maybe not all of them are good for you.
     - Classic
     - e.g.: doordash, ifood
     - It is kinda dangerous and can lead to tarpit ideas. Think with yourself: is there a reason why this did not exist yet?
-
 4. Look for things in the world that have changed recently
     - Create a new oportunity with it
     - e.g.: covid
-
 5. Look for new variantes of successful companies
-
+    - e.g.: novocargo -> helps US companies to import products from mexico. There was a large market, that were a lot of proxies and even tho they didn't have expertise in the domain, they had connections
+6. Talk to people and just ask what problem they have
+    - The downside is that this really requires a lot of skill. People often don't know what they want.
+    - Pick a fertile idea space and talk to people in that idea space
+    - Talk to founders in that idea space to get advice
+    - e.g.: AtoB -> they were young, didn't had any expertise. It was systematic:
+    - They started with a bad idea, but when they went into YC, they spent the whole YC batch looking for a new idea.
+        1. Picked an idea space (software for trucking industry, they think that was fertile)
+        2. Drove to truck stops and talked to potential users
+        3. Asked other founders about the industry
+        4. Evaluated several ideas before picking the good one
+7. Look for big industries that seem broken
+    - They are right for disruption
