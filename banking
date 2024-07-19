@@ -1,0 +1,96 @@
+idempotency
+blue-green deployment
+feature flag
+security
+do not crash
+high availability is critical (own data center?)
+multi tenant
+disaster recovery
+atomic transactions
+a LOT of logs
+auditing table
+metrics
+reliability
+antifraud
+double entry
+
+        credit book account
+       /
+entry -
+       \
+        debit book account
+
+balance: the sum of all credits and debits for one book-account
+a customer's balance sheet is a cumulative funcion of their entire history
+
+double entry: the rulebook
+we have to relate business events like a new purchase, a new payment, to a series of entries that maps to our domain model
+all credit implies in a debit
+all debit implies in a credit
+challenges of double entry:
+  - ordering matters (movements are not commulative)
+  - late arriving events (e.g. payment was made 3 days ago)
+  - fixing invariants
+    - create a combinatory of events or data loss to with a random initial state to test all possibilities
+  - write throughput
+generative test or property based test
+
+write throughput - sacaling bottlenecks
+- database limits required throttling writes
+- batch job latency impacting customer experience
+solutions
+- need to partition the workload
+- customer data spread across services
+- safe to partition the user base
+- interactions between customers are minimal, so you can have the things above and deal with things concurrently
+
+option #1: partition service databases
+- write into a single database, if reaches certain limite we crate another shard
+- every query and request will need to route to the correct database
+
+problems
+- complexity in code (specially with microsservices)
+- does not address non-db bottlenecks
+- risks intermingling data infrastructure code with business logic
+
+option #2: scalability units
+- each service group has your own shard. Like **multi tenants**
+
+problems
+- we still need to route to the right shard when certain events happens
+  - ex.: global section that is not sharded and mantain mappings to externaly known notifiers to customer's respectively shard (with an id, for example)
+  - you have to create this mapping on the very beggining, when the customer loggs in
+  - using hiperlinks that will point to the right service
+
+falt tolerance patterns
+- deadletters
+  - producer
+  - consumer
+  - motician
+  - topic
+  - deadletter-topic
+  * this is very good because data loss is unacceptable
+
+- circuit breakers
+  - messaging
+  - consuming messages
+  - outbound faild and a circuit breaker trips
+  - stop consuming messages
+
+ETL + Analytical Environment
+- Hello erlang
+- have assertions of facts
+  - when you have something that use to be a fact (like limit change), you have to log this
+- translate a risk analysis in a credit limit
+- we need to think about these data, contribution margins, interchange, personal, customer non interest expenses because of regulators
+- machine learning models
+
+that are a lot of interactions between bounded contexts, we need to decouple them
+
+we need idempotency keys to make sure that a thing will happen more than one time, nubank uses procedures of datomic for it, acid transactions for that, correlation_id
+
+when to use dynamodb?
+database practices for financial applications
+a data have to be linked with its owner, correlation_id
+
+
